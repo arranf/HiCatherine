@@ -12,21 +12,49 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+  
+  <style>
+      .padded-card {
+        margin-left: 5em; margin-right: 5em;
+        flex: 1;
+      }
+  </style>
 </head>
 
 <body>
-    <article class="card">
-        <header>
-            <h3>Hi Catherine</h3>
-            <p>Here are some things I thought you might enjoy doing today.</p>
-            <ul>
-                <li>Flutter Challenge: <a href="https://medium.com/fluttery/introducing-flutter-challenges-c72d4b6e005d">Can you make this app?</a></li>
-                <li>You could also take a swing at making <a href="https://flutterweekly.us17.list-manage.com/track/click?u=c8d8d18b6e2c6316ddc1d48a0&id=dd67567545&e=0562da2f5d">this book app if you wanted some help from a video</a></li>
-                <li>Speaking of videos there's a cool video of <a href="https://www.youtube.com/watch?v=CLkbbLpn5Sc">Firebat trying a quirky Mage deck</a></li>
-                <li>Maths! There is some in the basket!</li>
-                <li>Why not start learning Python? It's the easiest language to pick up and it's quite fun. You could try <a href="https://learnpython.org">here</a> or <a href="https://github.com/karan/Projects">here if you want some project ideas.</a></li>
-            </ul>
-        </header>
-    </article>
+    <div style="display: flex; align-items: center; flex-direction: column; margin-top: 3em;">       
+        <!-- This div is required to make them have the cards have the same width -->
+        <!-- https://stackoverflow.com/questions/34993826/flexbox-column-direction-same-width -->
+        <div>
+            <article class="card padded-card"> 
+                <header>
+                    <h3>Hi Catherine</h3>
+                    <p>Here are some things I thought you might enjoy doing tonight.</p>
+                    <ul>
+                        <li>Looking at some of the new Hearthstone cards that <a href="https://playhearthstone.com/en-us/expansions-adventures/the-witchwood/cards">been revealed so far</a>.</li>
+                        <li>Setting up <a href="https://hsdecktracker.net/">HS Deck Tracker</a> and then finding some decks on <a href="https://hsreplay.net/">that you could build</a>.</li>
+                        <li>Look at the new Heroes of Storm hero! <a href="https://www.youtube.com/watch?v=Yx0sZIIJ5Bc">Deckard Cain</a></li>
+                        <li>Eat Chocolate.</li>
+                        <li><a href="https://www.youtube.com/watch?v=cKxRvEZd3Mw">Learning about Machine Learning</a>, so you know what I'm rambling on about when I mention it.</li>
+                        <li>Watch this <a href="https://www.youtube.com/watch?v=ZATvEQNzBEU">Kala Coaching video on how to play Li-Ming</a> (who I think you'd like!)</li>
+                        <li>These video on how to improve at Heroes at Bronze level! <a href="https://www.youtube.com/watch?v=PjjFUiyKSYI">L2P - Bronze</a></li>
+                    </ul>
+                </header>
+            </article>
+        
+            <article class="card padded-card">
+                <header>
+                    <p>From Last Time:</p>
+                    <ul>
+                        <li>Flutter Challenge: <a href="https://medium.com/fluttery/introducing-flutter-challenges-c72d4b6e005d">Can you make this app?</a></li>
+                        <li>You could also take a swing at making <a href="https://flutterweekly.us17.list-manage.com/track/click?u=c8d8d18b6e2c6316ddc1d48a0&id=dd67567545&e=0562da2f5d">this book app if you wanted some help from a video</a></li>
+                        <li>Speaking of videos there's a cool video of <a href="https://www.youtube.com/watch?v=CLkbbLpn5Sc">Firebat trying a quirky Mage deck</a></li>
+                        <li>Maths! There is <em>still</em> some in the basket!</li>
+                        <li>Why not start learning Python? It's the easiest language to pick up and it's quite fun. You could try <a href="https://learnpython.org">here</a> or <a href="https://github.com/karan/Projects">here if you want some project ideas.</a></li>
+                    </ul>
+                </header>
+            </article>
+        </div>
+    </div>
 </body>
 </html>
