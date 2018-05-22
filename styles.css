@@ -12,6 +12,7 @@ body {
 
 
 .title-bar {
+    width: 100%;
     background-color: #f7f7f7;
     display: flex;
 }
@@ -22,6 +23,7 @@ body {
 }
 
 .navbar {
+    width: 100%;
     overflow: hidden;
     background-color: #333;
 }
@@ -60,21 +62,65 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-.dropdown-content a {
-  float: none;
-  color: black;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
 .dropdown:hover .dropdown-content {
-  display: block;
+    display: block;
 }
 
-.page {
-    margin: 0 20% 0 20%;
+.header-image {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#stock-photo {
+    width: 100%;
+    display: block;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    justify-content: center;
+}
+
+.header-overlay-text {
+    font-size: 24px;
+}
+
+.header-overlay-button {
+    display: block;
+    padding: 6px;
+    background-color: #524f4f;
+    border: 1px solid black;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+    .header-overlay-button:hover {
+        background-color: #373434;
+    }
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    margin-top: 70px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
