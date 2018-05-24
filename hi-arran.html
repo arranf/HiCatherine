@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hi Arran</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="hi-catherine.html">Hi Catherine</a>
+        <a href="hi-arran.html">Hi Arran</a>
+        <div class="dropdown">
+            <div class="dropbtn">
+                Dropdown
+                <i class="fa fa-caret-down"></i>
+            </div>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="openbtn" onclick="openNav()">&#9776;</a>
+
+        </div>
+    </div>
+    <div class="content">
+        <h1>Hi Arran!</h1>
+        <p>
+            Take a scroll through this page to see some of the things I have learnt to do. 
+            First of all, you can appreciate my nice left and right margin - should look pretty good if you resize the screen too!            
+        </p>
+
+        <h2>Navigation Bar</h2>
+        <p>
+            I'm sure you have already seen my nice navigation bar? The dropdown doesn't link to anywhere but I think it looks pretty cool!
+        </p>
+        <p>
+            I want to make it so that it highlights the active page. And also to make it 'sticky' like <a href="https://www.w3schools.com/howto/howto_js_navbar_sticky.asp">here</a>,
+            which I think would be cool for the homepage where it has a header abover the navbar.
+        </p>
+        <p>
+            <strong>And while we're at it... </strong> did you like my link there? Oh, and my <strong>strong</strong> text? I can also do <em>emphasised</em> text. 
+            I can even use special characters to write out the tags that I used... &lt;strong&gt; and &lt;em&gt;.
+        </p>
+        <p class="impressed">
+            Impressed yet?
+        </p>
+
+        <h2>Navigation Pane</h2>
+        <p>
+            So, I probably wouldn't bother with a navigation pane when I already have a navigation bar, but this is just for demonstration!
+            To open the navigation pane, click <strong onclick="openNav()">here</strong> (or you can use the icon in the navbar).
+        </p>
+        <p>
+            Do you like how the rest of the page slides over? Notice that if the page is too narrow it will overlay the navbar instead (otherwise you end up with the rest of the page looking very squished).
+        </p>
+        <p>
+            And the way the links in the pane light up when you hover over them?
+        </p>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">MenuItem1</a>
+            <a href="#">MenuItem2</a>
+            <a href="#">MenuItem3</a>
+            <a href="#">MenuItem4</a>
+            <a href="#">MenuItem5</a>
+        </div>
+
+        <h2>Cards</h2>
+        <p>You've guessed it, they will order to fit the page dynamically - try resizing the screen!</p>
+        <div class="card-container">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Some text here...</p>
+                <a class="button" href="" style="width: 100%; margin: 2px;">Maybe even a button</a>
+            </div>
+            <div class="card">
+                <h3>Card 2</h3>
+            </div>
+            <div class="card">
+                <h3>Card 3</h3>
+            </div>
+            <div class="card">
+                <h3>Card 4</h3>
+            </div>
+            <div class="card">
+                <h3>Card 5</h3>
+            </div>
+            <div class="card">
+                <h3>Card 6</h3>
+            </div>
+        </div>
+        <p>
+            With my css rules this is easily reusable, so you could use it or something similar for your <a href="hi-catherine.html">Hi Catherine</a> page.
+        </p>
+
+        <h2>Forms</h2>
+        <p>Check out this nicely styled form... The text fields go red if you give an invalid input</p>
+        <form action='' method='get' class='form'>
+            <div class="form-row">
+                <label for="full-name">Name</label>
+                <input id="full-name" name="full-name" type="text" placeholder="Joe Bloggs"/>
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="joe@example.com" />
+            </div>
+            <fieldset class="legacy-form-row">
+                <legend>Snack?</legend>
+                <input id="snack1" name="favourite-snack" type="radio" value="Nuts" checked/>
+                <label for="snack1" class="radio-label">Nuts</label>
+                <input id="snack2" name="favourite-snack" type="radio" value="Crumpets" />
+                <label for="snack2" class="radio-label">Crumpets</label>
+            </fieldset>
+            <div class='form-row'>
+                <label for='t-shirt'>Dropdown menu</label>
+                <select id='t-shirt' name='t-shirt'>
+                    <option value='xs'>Option 1</option>
+                    <option value='s'>Option 2</option>
+                    <option value='m'>Option 3</option>
+                    <option value='l'>Option 4</option>
+                </select>
+            </div>
+        </form>
+        
+        <h2>Tabs</h2>
+        Try clicking on the tabs to the left to see some info about me (though not yet)! The first tab is open by default.
+        <div class="tabcontrol">
+            <nav class="tabs">
+                <div onclick="openTab(event, 'profile')" class="tablink active">
+                    <svg id="profile-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#FFFFFF" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                    </svg>
+                </div>
+                <div onclick="openTab(event, 'history')" class="tablink">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path id="history-icon" fill="#FFFFFF" d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
+                    </svg>
+                </div>
+                <div onclick="openTab(event, 'contact')" class="tablink">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#FFFFFF" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                    </svg>
+                </div>
+            </nav>
+            <div id="profile" class="tabcontent">
+                <h2>About Me</h2>
+                <p>This is some tab content</p>
+            </div>
+            <div id="history" class="tabcontent">
+                <h2>History</h2>
+                <p>This is some tab content</p>
+            </div>
+            <div id="contact" class="tabcontent">
+                <h2>Contact</h2>
+                <p>This is some tab content</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div style="width:100%;height:100%;position:absolute;vertical-align:middle;text-align:center;">
+        <button type="button" onclick="buttonPress()" style="margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
+            Click
+        </button>
+        <img src="images/profile.png" style="visibility: hidden; position: relative; height: 100px" />
+    </div>
+
+    <script>
+        let stopped = true;
+        let me = document.querySelector("img");
+        let angle = Math.PI / 2;
+        function animate(time, lastTime) {
+            if (lastTime != null && stopped == false) {
+                angle += (time - lastTime) * 0.001;
+            }
+            me.style.top = (Math.sin(angle) * 200 - 60) + "px";
+            me.style.left = (Math.cos(angle) * 200) + "px";
+            if (stopped) return;
+            requestAnimationFrame(newTime => animate(newTime, time));
+        }
+        function buttonPress() {
+            if (stopped) {
+                stopped = false;
+                me.style.visibility = 'visible';
+            }
+            else stopped = true;
+            requestAnimationFrame(animate);
+        }
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            let content = document.querySelector(".content");
+
+            if (content.clientWidth > 600) {
+                content.style.margin = "0px 375px 0px  125px";
+            };
+
+            
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.querySelector(".content").style.margin = "0px 15% 0px 15%";
+        }
+
+        function openTab(evt, tabName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
