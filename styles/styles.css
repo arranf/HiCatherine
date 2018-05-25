@@ -22,23 +22,22 @@ body {
     font-size: 3em;
     margin-left: 10px;
 }
-.social{
+
+.social {
     list-style-type: none;
     display: flex;
     align-items: flex-end;
-    margin: 0 10px 20px 0 ;
+    margin: 0 10px 20px 0;
 }
 
 
 .navbar {
-    width: 100%;
     background-color: #333;
     overflow: hidden;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     .navbar {
-        padding-bottom: 3em;
     }
 }
 
@@ -88,29 +87,34 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.tabcontrol{
-    margin:5px;
+
+.tabcontrol {
+    margin: 5px;
     display: flex;
 }
-.tabs{
+
+.tabs {
     width: 50px;
-    float:left;
+    float: left;
 }
-.tablink{
+
+.tablink {
     width: 50px;
     height: 50px;
     color: white;
     background-color: darkgray;
     border-bottom: 1px solid white;
-    text-align:center;
-    padding-top:13px;
+    text-align: center;
+    padding-top: 13px;
     cursor: pointer;
 }
-.tablink.active{
-    background-color: #3e375f;
-}
-.tabcontent{
-    display:none;
+
+    .tablink.active {
+        background-color: #3e375f;
+    }
+
+.tabcontent {
+    display: none;
     width: 100%;
     margin-left: 20px;
     padding-left: 10px;
@@ -120,9 +124,10 @@ body {
     padding-bottom: 300px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 }
-.tabcontent:nth-child(2){
-    display: block;
-}
+
+    .tabcontent:nth-child(2) {
+        display: block;
+    }
 
 .header-image {
     position: relative;
@@ -144,12 +149,12 @@ body {
     justify-content: center;
 }
 
-.header-overlay .header-overlay-text {
-    font-size: 24px;
-    margin: 0 auto;
-    text-align:center;
-    color: white;
-}
+    .header-overlay .header-overlay-text {
+        font-size: 24px;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+    }
 
 .button {
     display: block;
@@ -163,15 +168,17 @@ body {
     text-decoration: none;
     color: white;
 }
-.header-overlay .button{
+
+.header-overlay .button {
     background-color: transparent;
     border: 1px solid white;
 }
 
-    .button:hover {
-        background-color: #373434;
-    }
-    .header-overlay .button:hover{
+.button:hover {
+    background-color: #373434;
+}
+
+.header-overlay .button:hover {
     background-color: gray;
 }
 
@@ -381,7 +388,6 @@ p {
         .legacy-form-row legend {
             float: left;
         }
-
 }
 
 .legacy-form-row {
@@ -408,3 +414,12 @@ p {
         float: left;
     }
 
+.blurry-text {
+    margin-top: 10px;    
+    color: transparent;    
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+.button.hidden{
+    display:none;
+}
