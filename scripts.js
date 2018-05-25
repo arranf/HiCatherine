@@ -1,4 +1,4 @@
-﻿let stopped = true;
+let stopped = true;
 let me = document.querySelector("img");
 let angle = Math.PI / 2;
 function animate(time, lastTime) {
@@ -54,4 +54,41 @@ function openTab(evt, tabName) {
     // Show the current tab, and add an "active" class to the button that opened the tab
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+}
+
+
+function reveal() {
+    text = document.getElementsByClassName("blurry-text");
+
+    var i;
+    for (i = 0; i < text.length; i++) {
+        para = text[i];
+        para.style.textShadow = "none";
+        para.style.color = "inherit";
+    }
+
+    revealButton = document.getElementById("reveal");
+    revealButton.className += " hidden";
+
+    hideButton = document.getElementById("hide");
+    hideButton.classList.remove("hidden");
+}
+
+function hide() {
+    text = document.getElementsByClassName("blurry-text");
+
+    var i;
+    for (i = 0; i < text.length; i++) {
+        para = text[i];
+        para.style.textShadow = "0 0 10px rgba(0,0,0,0.5)";
+        para.style.color = "transparent";
+    }
+
+    revealButton = document.getElementById("reveal");
+    revealButton.classList.remove("hidden");
+    
+
+    hideButton = document.getElementById("hide");
+    hideButton.className += " hidden";
+    
 }
