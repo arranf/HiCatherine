@@ -4,6 +4,7 @@
     <title>Hi Arran</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="navbar">
@@ -24,7 +25,7 @@
         <a href="javascript:void(0)" class="openbtn" onclick="openNav()">&#9776;</a>
 
         </div>
-    </div>
+    
     <div class="content">
         <h1>Hi Arran!</h1>
         <p>
@@ -61,11 +62,9 @@
         </p>
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">MenuItem1</a>
-            <a href="#">MenuItem2</a>
-            <a href="#">MenuItem3</a>
-            <a href="#">MenuItem4</a>
-            <a href="#">MenuItem5</a>
+            <a href="#">Home</a>
+            <a href="#">Hi Catherine</a>
+            <a href="#">Hi Arran</a>
         </div>
 
         <h2>Cards</h2>
@@ -168,64 +167,6 @@
         <img src="images/profile.png" style="visibility: hidden; position: relative; height: 100px" />
     </div>
 
-    <script>
-        let stopped = true;
-        let me = document.querySelector("img");
-        let angle = Math.PI / 2;
-        function animate(time, lastTime) {
-            if (lastTime != null && stopped == false) {
-                angle += (time - lastTime) * 0.001;
-            }
-            me.style.top = (Math.sin(angle) * 200 - 60) + "px";
-            me.style.left = (Math.cos(angle) * 200) + "px";
-            if (stopped) return;
-            requestAnimationFrame(newTime => animate(newTime, time));
-        }
-        function buttonPress() {
-            if (stopped) {
-                stopped = false;
-                me.style.visibility = 'visible';
-            }
-            else stopped = true;
-            requestAnimationFrame(animate);
-        }
-
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            let content = document.querySelector(".content");
-
-            if (content.clientWidth > 600) {
-                content.style.margin = "0px 375px 0px  125px";
-            };
-
-            
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.querySelector(".content").style.margin = "0px 15% 0px 15%";
-        }
-
-        function openTab(evt, tabName) {
-            // Declare all variables
-            var i, tabcontent, tablinks;
-
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablink");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
