@@ -31,17 +31,17 @@ body {
 }
 
 
-.navbar {
+.my-navbar {
     background-color: #333;
     overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar {
+    .my-navbar {
     }
 }
 
-.navbar a {
+.my-navbar a {
     float: left;
     color: white;
     text-align: center;
@@ -49,12 +49,12 @@ body {
     text-decoration: none;
 }
 
-.dropdown {
+.my-dropdown {
     float: left;
     overflow: hidden;
 }
 
-    .dropdown .dropbtn {
+    .my-dropdown .dropbtn {
         color: white;
         padding: 10px 10px;
         background-color: inherit;
@@ -62,7 +62,7 @@ body {
         margin: 0;
     }
 
-    .navbar a:hover, .dropdown:hover .dropbtn {
+    .my-navbar a:hover, .my-dropdown:hover .dropbtn {
         background-color: lightgray;
         color: #000;
     }
@@ -84,7 +84,7 @@ body {
         text-align: left;
     }
 
-.dropdown:hover .dropdown-content {
+.my-dropdown:hover .dropdown-content {
     display: block;
 }
 
@@ -183,7 +183,6 @@ body {
 }
 
 .content {
-    margin: 0 15% 0 15%;
     transition: 0.5s;
 }
 
@@ -415,11 +414,39 @@ p {
     }
 
 .blurry-text {
-    margin-top: 10px;    
-    color: transparent;    
+    margin-top: 10px;
+    color: transparent;
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: 0.5s;
 }
-.button.hidden{
-    display:none;
+
+.button.hidden {
+    display: none;
+}
+
+.nav-pills a {
+    color: inherit;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: red;
+    background-color: inherit;
+    font-size: 1.2em;
+}
+.nav-pills > li > a:hover{
+    background-color: inherit;
+    color: #a09b9b;
+}
+
+.affix {
+    top: 0;
+    z-index: 9999;
+}
+@media only screen and (max-width: 800px) {
+    .nav-pills.affix{
+        display: none;
+    }
+}
+.nav-pills{
+    margin-top: 25px;
 }
