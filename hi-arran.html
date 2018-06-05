@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="styles/styles.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="15" style="position: relative;">
     <nav class="my-navbar">
         <a href="index.html">Home</a>
         <a href="hi-catherine.html">Hi Catherine</a>
-        <a href="hi-arran.html">Hi Arran</a>
+        <a href="hi-arran.html" class="active">Hi Arran</a>
         <div class="my-dropdown">
             <div class="dropbtn">
                 Dropdown
@@ -27,12 +27,13 @@
             </div>
         </div>
         <a href="javascript:void(0)" class="openbtn" onclick="openNav()">&#9776;</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     </nav>
 
     <div class="container">
         <div class="row">
             <div class="col-sm-2" id="myScrollspy" style="min-width: 150px;">
-                <ul class="nav nav-pills nav-stacked default" data-spy="affix" data-offset-top="50">
+                <ul class="nav nav-stacked default" data-spy="affix" data-offset-top="50">
                     <li><a href="#Navigation-Bar">Navigation Bar</a></li>
                     <li><a href="#Navigation-Pane">Navigation Pane</a></li>
                     <li><a href="#Cards">Cards</a></li>
@@ -78,12 +79,15 @@
                             Do you like how the rest of the page slides over? Notice that if the page is too narrow it will overlay the navbar instead (otherwise you end up with the rest of the page looking very squished).
                         </p>
                         <p>
+                            <strong>EDIT:</strong> I have changed it so that the rest of the page doesn't slide over. After changing the structure of the content to support Bootstrap so I could make the <a href="#Scrollspy">Scrollspy</a> I had slightly different margins so it no longer needs the page to slide over.
+                        </p>
+                        <p>
                             And the way the links in the pane light up when you hover over them?
                         </p>
                     </div>
                     
                     <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        
                         <a href="#">Home</a>
                         <a href="#">Hi Catherine</a>
                         <a href="#">Hi Arran</a>

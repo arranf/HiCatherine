@@ -19,20 +19,32 @@ function buttonPress() {
     requestAnimationFrame(animate);
 }
 
+let openbtn = document.querySelector(".openbtn");
+let closebtn = document.querySelector(".closebtn");
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    let content = document.querySelector(".content");
 
-    if (content.clientWidth > 600) {
-        content.style.margin = "0px 375px 0px  125px";
-    };
+    openbtn.style.marginRight = "250px";
+    closebtn.style.marginRight = "250px";
 
-
+    setTimeout(function () {
+        openbtn.style.display = "none";
+        closebtn.style.display = "block";
+    }, 460);
+    
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.querySelector(".content").style.margin = "0px 15% 0px 15%";
+
+    openbtn.style.marginRight = "0";
+    closebtn.style.marginRight = "0";
+
+    setTimeout(function () {
+        openbtn.style.display = "block";
+        closebtn.style.display = "none";
+    }, 460);
 }
 
 function openTab(evt, tabName) {
@@ -52,7 +64,8 @@ function openTab(evt, tabName) {
     }
 
     // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabName).style.display = "block";
+    var currentTab = document.getElementById(tabName);
+    currentTab.style.display = "block";
     evt.currentTarget.className += " active";
 }
 
@@ -92,3 +105,5 @@ function hide() {
     hideButton.className += " hidden";
     
 }
+
+
