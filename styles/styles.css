@@ -474,16 +474,89 @@ p {
     height:250px;
     background-color: #455A64;
     color: white;
-    justify-content: center;
     align-items: center;
+    background-image: url(../images/mathematical-equations-390x285.jpg);
+    opacity:1;
+    transition: 0.5s;
+}
+.hover-item h2{
+    z-index:1;
+    position: relative;
+    top: 80px;
+    transition: 0.5s;
 }
 .hover-item .line{
     width: 150px;
     height:2px;
     background-color: white;
     margin-bottom:10px;
-    display: none;
 }
-.hover-item p{
-    display: none;
+.hover-item .appearing{
+    position: relative;
+    top: 90px;
+        visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
+.hover-item:hover{
+    opacity: 0.6;
+}
+.hover-item:hover h2{
+    top: 50px;
+}
+.hover-item:hover .appearing
+{
+    visibility:visible;
+    opacity: 1;
+    top: 70px;
+}
+
+.about-card{
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    padding: 2px 20px 20px 20px;
+    margin-bottom: 30px;
+}
+.about-main{
+    
+    display:flex;
+    align-items:center;
+}
+.about-card .image{
+    height:180px;
+    width: 180px;
+    border-radius: 90px;
+    background-color: #FFC107;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.about-card .about-content{
+    flex-shrink: 1;
+}
+.more-button{
+    color: #5b717c;
+    z-index:99;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+i {
+    transition: all 300ms ease-in 0s;
+}
+.details{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+.button-text{
+    display:flex;
+}
+.about-title{
+    display:flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.about-title p{
+    font-size: 1.1em;
+    color: #757575;
+}
+

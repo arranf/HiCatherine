@@ -106,4 +106,26 @@ function hide() {
     
 }
 
+var details = false;
+function openDetails(cardId) {
+    let card = document.getElementById(cardId);
+    let details = card.querySelector(".details");
+
+    if (details.classList.contains("showing")) {
+        details.style.maxHeight = "0";
+
+        details.classList.remove("showing");
+
+        card.querySelector(".more-button").querySelector("p").querySelector("i").style.transform = "rotate(0deg)";
+    }
+    else {
+        details.style.maxHeight = details.scrollHeight + "px";
+
+        details.classList.add("showing");
+
+        card.querySelector(".more-button").querySelector("p").querySelector("i").style.transform = "rotate(180deg)";
+    }
+
+
+}
 

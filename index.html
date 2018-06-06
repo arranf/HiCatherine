@@ -9,20 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Open+Sans" rel="stylesheet">
-    <script>
-        $(document).ready(function () {
-            $(".hover-item").hover(function () {
-                $(this).find("p").css("display", "block");
-                $(this).find(".line").css("display", "block");
-            },
-            function () {
-                $(this).find("p").css("display", "none");
 
-                $(this).find(".line").css("display", "none");
-
-            });
-        });
-    </script>
 </head>
 <body>
     <script src="scripts.js"></script>
@@ -57,6 +44,7 @@
 
     <nav class="my-navbar">
         <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Me</a>
         <a href="hi-catherine.html">Hi Catherine</a>
         <a href="hi-arran.html">Hi Arran</a>
     </nav>
@@ -80,8 +68,10 @@
         <div class="card-container">
             <div class="hover-item">
                 <h2>Hi there</h2>
-                <div class="line"></div>
-                <p>This is some more text</p>
+                <div class="appearing">
+                    <div class="line"></div>
+                    <p>This is some more text</p>
+                </div>                
             </div>
         </div>
         <div class="card-container">
