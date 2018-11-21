@@ -15,3 +15,6 @@
 .card-content{
     overflow: auto; /*to make card height of its child divs */
 }
+.job{
+    padding: 1em 0;
+}
