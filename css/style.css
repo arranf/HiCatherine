@@ -1,0 +1,20 @@
+
+/*HEADER*/
+.header-image img{
+    width:100%;
+}
+
+/* CONTENT */
+.main{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.content{
+    padding-top: 10%;
+}
+.card-content{
+    overflow: auto; /*to make card height of its child divs */
+}
+.job{
+    padding: 1em 0;
+}
