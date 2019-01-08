@@ -14,41 +14,50 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Open+Sans:300,400" rel="stylesheet">
 
 </head>
 
 <body class="blue-grey lighten-5">
-    <div class="main" style="background-image: url(images/background.jpg)">
+    <div class="main" style="background-image: url(images/background1.jpg)">
         <nav class="transparent z-depth-0">
                 <div class="nav-wrapper">
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="https://catfrance.blogspot.com/">Blog</a></li>
                     </ul>
                 </div>
             </nav>
+        
         <div class="container content">
             <div class="row">
                 <div class="col">
                     <div id="profile" class="card">
                         <div class="card-content">
-                            <div id="profile-img" class="col s12 m6 push-m6">
-                                <img class="responsive-img" src="images/profile_bw.jpg" />
+                            <div id="profile-img" class="col s12 m4 push-m8">
+                                <img class="responsive-img" srcset="images/profile_bw_403.jpg 403w,
+                                            images/profile_bw_605.jpg 605w,
+                                            images/profile_bw_806.jpg 806w,
+                                            images/profile_bw_1008.jpg 1008w"
+                                    sizes="(max-width: 403px) 403px,
+                                            (max-width: 605px) 605px,
+                                            (max-width: 806px) 806px,
+                                            1008px"
+                                    src="images/profile_bw.jpg" alt="Catherine France profile">
                             </div>
-                            <div id="profile-text" class="col s12 m6 pull-m6">
-                                <span class="card-title">Catherine France</span><br/>
-                                <p><i class="fas fa-briefcase"></i> Analyst Programmer</p>
-                                <p><i class="fas fa-map-marker-alt"></i> Surrey, UK</p>
-                                <p><i class="fas fa-envelope"></i> catherinefoster95@gmail.com</p><br/>
-                                <p>Lorem ipsum dolor sit amet, ne per luptatum theophrastus, eros erat nam no, ut putent
-                                    invenire vel. Ius et dicam dissentiet. Aliquip partiendo duo cu, eu viris primis vix,
-                                    libris volutpat iracundia sit ea. Sea alii lorem feugait at, vel adhuc choro vivendo
-                                    te. Ex
-                                    postea sanctus apeirian eos, an tollit doctus eos. Ex vis decore conclusionemque, te
-                                    eum
-                                    adipiscing reformidans, per novum homero equidem ei. Per consul possit offendit in.</p>
+                            <div id="profile-text" class="col s12 m8 pull-m4">
+                                <span class="card-title name-title">Catherine France</span>
+                                <div class="facts">
+                                    <span class="fact"><i class="fas fa-briefcase"></i> Analyst Programmer</span>
+                                    <span class="fact"><i class="fas fa-map-marker-alt"></i> Surrey, UK</span>
+                                    <span class="fact"><i class="fas fa-envelope"></i> catherinefoster95@gmail.com</span>
+                                </div>                                
+                                <p></p>
                                 </div>
                         </div>
+                        <div class="card-action teal center-align">
+                                <a class="white-text" href="https://www.linkedin.com/in/catherine-france-a978aba0/"><i class="fab fa-linkedin"></i></a>
+                                <a class="white-text" href="https://www.facebook.com/catherine.foster.129"><i class="fab fa-facebook"></i></a>
+                                <a class="white-text" href="https://plus.google.com/u/0/104605965086183356300"><i class="fab fa-google-plus-square"></i></a>
+                              </div>
                     </div>
                 </div>
             </div>
@@ -61,27 +70,43 @@
                                 <li class="job">
                                     <div class="job-title">Analyst Programmer</div>
                                     <div class="job-place">XLCubed Ltd</div>
-                                    <span class="job-dates">Nov 2017 - Present</span>
-                                    <p class="job-description">Lorem ipsum dolor sit amet, ne per luptatum theophrastus, eros erat nam no, ut putent
-                                        invenire vel. Ius et dicam dissentiet. Aliquip partiendo duo cu, eu viris primis vix,
-                                        libris volutpat iracundia sit ea. Sea alii lorem feugait at, vel adhuc choro vivendo
-                                        te. Ex
-                                        postea sanctus apeirian eos, an tollit doctus eos. Ex vis decore conclusionemque, te
-                                        eum
-                                        adipiscing reformidans, per novum homero equidem ei. Per consul possit offendit in.</p>
+                                    <div class="job-dates"><i class="fas fa-calendar-alt"></i>Nov 2017 - Present</div>
+                                    <p class="job-description">
+                                        <div class="job-subtitle">Training and Support</div>
+                                        <p>Responding to support queries submitted via email. Creating training resources such as tutorial videos and demo material. Delivering training sessions.</p>
+                                        <div class="job-subtitle">Development</div>
+                                        <p>Investigating and fixing bugs. Developing new features. Carrying out testing on new release builds.</p>
+                                        <div class="job-subtitle">Design</div>
+                                        <p>Redesign of company website. Evaluation and development of product UX/UI.</p>
+                                    </p>
+                                    <div class="skill-chips">
+                                        <div class="chip">C#</div>
+                                        <div class="chip">HTML</div>
+                                        <div class="chip">CSS</div>
+                                    </div>
                                 </li>
                                 <div class="divider"></div>
                                 <li class="job">
-                                    <div class="job-title">Resourcer</div>
+                                    <div class="job-title">Tutor Administrator</div>
                                     <div class="job-place">Winchmore Tutors</div>
-                                    <span class="job-dates">Feb 2017 - Nov 2017</span>
-                                    <p class="job-description">Lorem ipsum dolor sit amet, ne per luptatum theophrastus, eros erat nam no, ut putent
-                                        invenire vel. Ius et dicam dissentiet. Aliquip partiendo duo cu, eu viris primis vix,
-                                        libris volutpat iracundia sit ea. Sea alii lorem feugait at, vel adhuc choro vivendo
-                                        te. Ex
-                                        postea sanctus apeirian eos, an tollit doctus eos. Ex vis decore conclusionemque, te
-                                        eum
-                                        adipiscing reformidans, per novum homero equidem ei. Per consul possit offendit in.</p>
+                                    <div class="job-dates"><i class="fas fa-calendar-alt"></i>Feb 2017 - Nov 2017</div>
+                                    <p class="job-description">Responsible for recruiting tutors and completing stringent compliance checks. Regularly organising and carrying out recruitment days consisting of interviewing and hiring tutors. Excellent administration and organisation skills used in an office environment within a team.</p>
+                                    <div class="skill-chips">
+                                        <div class="chip">Administration</div>
+                                        <div class="chip">Recruitment</div>
+                                        <div class="chip">Networking</div>
+                                    </div>
+                                </li>
+                                <div class="divider"></div>
+                                <li class="job">
+                                    <div class="job-title">Private Tutor</div>
+                                    <div class="job-place">Grove Tutors</div>
+                                    <div class="job-dates"><i class="fas fa-calendar-alt"></i>Jan 2015 - Present</div>
+                                    <p class="job-description">One-to-one Maths tuition at GCSE and A-Level to students of all abilities. This involves planning lessons and setting homework whilst maintaing a good report and professional relationship with students and their families.</p>
+                                    <div class="skill-chips">
+                                        <div class="chip">Teaching</div>
+                                        <div class="chip">Mathematics</div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -93,13 +118,14 @@
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Education</span>
-                            <p>Lorem ipsum dolor sit amet, ne per luptatum theophrastus, eros erat nam no, ut putent
-                                invenire vel. Ius et dicam dissentiet. Aliquip partiendo duo cu, eu viris primis vix,
-                                libris volutpat iracundia sit ea. Sea alii lorem feugait at, vel adhuc choro vivendo
-                                te. Ex
-                                postea sanctus apeirian eos, an tollit doctus eos. Ex vis decore conclusionemque, te
-                                eum
-                                adipiscing reformidans, per novum homero equidem ei. Per consul possit offendit in.</p>
+                            <ul>
+                                <li class="job">
+                                    <div class="job-title">BSc Mathematics with Philosophy</div>
+                                    <div class="job-place">Royal Holloway, University of London</div>
+                                    <div class="job-dates">2013 - 2016</div>
+                                    <p class="job-description"></p>
+                                </li>                              
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -107,13 +133,7 @@
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Skills</span>
-                            <p>Lorem ipsum dolor sit amet, ne per luptatum theophrastus, eros erat nam no, ut putent
-                                invenire vel. Ius et dicam dissentiet. Aliquip partiendo duo cu, eu viris primis vix,
-                                libris volutpat iracundia sit ea. Sea alii lorem feugait at, vel adhuc choro vivendo
-                                te. Ex
-                                postea sanctus apeirian eos, an tollit doctus eos. Ex vis decore conclusionemque, te
-                                eum
-                                adipiscing reformidans, per novum homero equidem ei. Per consul possit offendit in.</p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -126,8 +146,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2018
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                © 2018                
             </div>
         </div>
     </footer>
