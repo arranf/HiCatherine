@@ -13,8 +13,8 @@
     width: 100%;
 }
 /* CONTENT */
-.main{
-    background-size: contain;
+.hero{
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .content{
@@ -25,6 +25,10 @@
 }
 .card-action i{
     font-size: 1.5em;
+}
+.card .card-title.large-title{
+    font-size: 32px;
+    margin: 1.1em 0;
 }
 .name-title{
     font-family: 'Merriweather',sans-serif;
@@ -44,18 +48,16 @@
     color: teal;
 }
 .job{
-    padding: 1em 0;
+    padding: 2em 0;
 }
 .job-title{
-    font-weight: 500;
-    font-size: 1.1em;
-}
-.job-place{
-    font-style:italic;
+    font-size: 1.3em;
+    margin-bottom: 10px;
 }
 .job-dates{
     margin-bottom: 1em;
 }
+.job-place i,
 .job-dates i{
     color: teal;
     margin-right: 0.8em;
@@ -65,4 +67,8 @@
 }
 .skill-chips{
     margin-top: 1em;
+}
+.table-of-contents a:hover,
+.table-of-contents a.active{
+    border-color: teal;
 }
