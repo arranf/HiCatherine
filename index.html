@@ -15,159 +15,183 @@
     <script src="js/materialize.min.js"></script>
     <script src="js/custom.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Open+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,500,600,700|Lato:400,500|Montserrat:600,700"
+        rel="stylesheet">
 
 </head>
 
 <body class="white">
-
-    <div class="hero" style="background-image: url(images/background1.jpg)">
-
-        <nav class="transparent z-depth-0">
-            <div class="nav-wrapper">
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                </ul>
-            </div>
-        </nav>
-
-        <div class="container" style="padding: 2em 0;">
-            <div id="profile" class="card">
-                <div class="card-content row">
-                    <div id="profile-img" class="col s12 m4 push-m8">
-                        <img class="responsive-img" srcset="images/profile_bw_403.jpg 403w,
+    <div class="container">
+        <div class="hero row valign-wrapper center">
+            <div class="col s12 m4 offset-m1">
+                <img class="profile-img" srcset="images/profile_bw_403.jpg 403w,
                                             images/profile_bw_605.jpg 605w,
                                             images/profile_bw_806.jpg 806w,
                                             images/profile_bw_1008.jpg 1008w"
-                            sizes="(max-width: 403px) 403px,
+                    sizes="(max-width: 403px) 403px,
                                             (max-width: 605px) 605px,
                                             (max-width: 806px) 806px,
                                             1008px"
-                            src="images/profile_bw.jpg" alt="Catherine France profile">
-                    </div>
-                    <div id="profile-text" class="col s12 m8 pull-m4">
-                        <span class="card-title name-title">Catherine France</span>
-                        <div class="facts">
-                            <span class="fact"><i class="fas fa-briefcase"></i> Analyst Programmer</span>
-                            <span class="fact"><i class="fas fa-map-marker-alt"></i> Surrey, UK</span>
-                            <span class="fact"><i class="fas fa-envelope"></i> catherinefoster95@gmail.com</span>
-                        </div>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="card-action teal center-align">
-                    <a class="white-text" href="https://www.linkedin.com/in/catherine-france-a978aba0/"><i class="fab fa-linkedin"></i></a>
-                    <a class="white-text" href="https://www.facebook.com/catherine.foster.129"><i class="fab fa-facebook"></i></a>
-                    <a class="white-text" href="https://plus.google.com/u/0/104605965086183356300"><i class="fab fa-google-plus-square"></i></a>
+                    src="images/profile_bw.jpg" alt="Catherine France profile">
+            </div>
+            <div class="col s12 m7 ">
+                <h1 class="title">Catherine France</h1>
+                <div class="teal-text darken-1 uppercase tagline">
+                    <span>UI/UX Designer</span>
+                    <i class="fas fa-circle separator"></i>
+                    <span>Mathematician</span>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="row">
-
-        <div class="col hide-on-small-only m2 offset-m1">
-            <ul class="section table-of-contents pushpin">
-                <li><a href="#experience">Work Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </div>
-
-        <div class="col m8">
-            <div class="card z-depth-0 section scrollspy" id="experience">
-                <div class="card-content">
-                    <span class="card-title large-title">Work Experience</span>
-                    <ul>
-                        <li class="job">
-                            <div class="job-title">Analyst Programmer</div>
-                            <div class="job-place"><i class="fas fa-building"></i>XLCubed Ltd</div>
-                            <div class="job-dates"><i class="fas fa-calendar-alt"></i>Nov 2017 - Present</div>
-                            <p class="job-description">
-                                <div class="job-subtitle">Training and Support</div>
-                                <p>Responding to support queries submitted via email. Creating training
-                                    resources such as tutorial videos and demo material. Delivering training
-                                    sessions.</p>
-                                <div class="job-subtitle">Development</div>
-                                <p>Investigating and fixing bugs. Developing new features. Carrying out testing
-                                    on new release builds.</p>
-                                <div class="job-subtitle">Design</div>
-                                <p>Redesign of company website. Evaluation and development of product UX/UI.</p>
-                            </p>
-                            <div class="skill-chips">
-                                <div class="chip">C#</div>
-                                <div class="chip">HTML</div>
-                                <div class="chip">CSS</div>
-                            </div>
-                        </li>
-                        <div class="divider"></div>
-                        <li class="job">
-                            <div class="job-title">Tutor Administrator</div>
-                            <div class="job-place"><i class="fas fa-building"></i>Winchmore Tutors</div>
-                            <div class="job-dates"><i class="fas fa-calendar-alt"></i>Feb 2017 - Nov 2017</div>
-                            <p class="job-description">Responsible for recruiting tutors and completing
-                                stringent compliance checks. Regularly organising and carrying out recruitment
-                                days consisting of interviewing and hiring tutors. Excellent administration and
-                                organisation skills used in an office environment within a team.</p>
-                            <div class="skill-chips">
-                                <div class="chip">Administration</div>
-                                <div class="chip">Recruitment</div>
-                                <div class="chip">Networking</div>
-                            </div>
-                        </li>
-                        <div class="divider"></div>
-                        <li class="job">
-                            <div class="job-title">Private Tutor</div>
-                            <div class="job-place"><i class="fas fa-building"></i>Grove Tutors</div>
-                            <div class="job-dates"><i class="fas fa-calendar-alt"></i>Jan 2015 - Present</div>
-                            <p class="job-description">One-to-one Maths tuition at GCSE and A-Level to students
-                                of all abilities. This involves planning lessons and setting homework whilst
-                                maintaing a good report and professional relationship with students and their
-                                families.</p>
-                            <div class="skill-chips">
-                                <div class="chip">Teaching</div>
-                                <div class="chip">Mathematics</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+        <div class="col s12 m3 l2 offset-m1 offset-l2 pushpin hide-on-small-only">
+            <div class="facts section summary">
+                <span class="fact"><i class="fas fa-briefcase teal-text darken-1"></i> Analyst Programmer</span>
+                <span class="fact"><i class="fas fa-map-marker-alt teal-text darken-1"></i> Surrey, UK</span>
+                <span class="fact"><i class="fas fa-envelope teal-text darken-1"></i> catherinefoster95@gmail.com</span>
             </div>
-
-            <div class="card z-depth-0 section scrollspy" id="education">
-                <div class="card-content">
-                    <span class="card-title large-title">Education</span>
-                    <ul>
-                        <li class="job">
-                            <div class="job-title">BSc Mathematics with Philosophy</div>
-                            <div class="job-place">Royal Holloway, University of London</div>
-                            <div class="job-dates">2013 - 2016</div>
-                            <p class="job-description"></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card z-depth-0 section scrollspy" id="skills">
-                <div class="card-content">
-                    <span class="card-title large-title">Skills</span>
-                    <ul>
-                        <li class="job">
-
-                        </li>
-                    </ul>
-                </div>
+            <div class="social center section hide-on-small-only">
+                <a class="pr-1 teal-text darken-1" href="https://www.linkedin.com/in/catherine-france-a978aba0/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="pr-1 teal-text darken-1" href="https://www.facebook.com/catherine.foster.129" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a class="teal-text darken-1" href="https://plus.google.com/u/0/104605965086183356300" target="_blank"><i
+                        class="fab fa-google-plus-square"></i></a>
             </div>
         </div>
+        <div class="col s12 m7 l6 main offset-m4">
+            <h2>Introduction</h2>
+            
+
+            <div class="section">
+                <h2>Experience</h2>
+                <ul>
+                    <li class="job facts section">
+                        <div class="job-title">Analyst Programmer</div>
+                        <div class="job-place fact"><i class="fas fa-building teal-text darken-1"></i>XLCubed Ltd</div>
+                        <div class="job-dates fact"><i class="fas fa-calendar-alt teal-text darken-1"></i>Nov 2017 -
+                            Present</div>
+                        <p class="job-description">
+                            <p><span class="job-subtitle">Training and Support</span>
+                                - Responding to support queries from global customers. Creating training
+                                resources such as tutorial videos and demo material. Visiting customer locations and
+                                delivering training
+                                sessions to groups onsite.</p>
+                            <p><span class="job-subtitle">Development</span>
+                                - Investigating and fixing bugs. Developing new features. Carrying out testing
+                                on new release builds.</p>
+                            <p><span class="job-subtitle">Design</span>
+                                - Redesign of company website. Evaluation and development of product UX/UI.</p>
+                        </p>
+                        <div class="skill-chips">
+                            <div class="chip">C#</div>
+                            <div class="chip">HTML</div>
+                            <div class="chip">CSS</div>
+                            <div class="chip">Javascript</div>
+                        </div>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="job facts section">
+                        <div class="job-title">Tutor Administrator</div>
+                        <div class="job-place fact"><i class="fas fa-building teal-text darken-1"></i>Winchmore Tutors</div>
+                        <div class="job-dates fact"><i class="fas fa-calendar-alt teal-text darken-1"></i>Feb 2017 -
+                            Nov
+                            2017</div>
+                        <p class="job-description">Responsible for recruiting tutors and completing
+                            stringent compliance checks. Regularly organising and carrying out recruitment
+                            days consisting of interviewing and hiring tutors. Excellent administration and
+                            organisation skills used in an office environment within a team.</p>
+                        <div class="skill-chips">
+                            <div class="chip">Administration</div>
+                            <div class="chip">Recruitment</div>
+                            <div class="chip">Networking</div>
+                        </div>
+                    </li>
+                    <div class="divider"></div>
+                    <li class="job facts section">
+                        <div class="job-title">Private Tutor</div>
+                        <div class="job-place fact"><i class="fas fa-building teal-text darken-1"></i>Grove Tutors</div>
+                        <div class="job-dates fact"><i class="fas fa-calendar-alt teal-text darken-1"></i>Jan 2015 -
+                            Present</div>
+                        <p class="job-description">One-to-one Maths tuition at GCSE and A-Level to students
+                            of all abilities. This involves planning lessons and setting homework whilst
+                            maintaing a good report and professional relationship with students and their
+                            families.</p>
+                        <div class="skill-chips">
+                            <div class="chip">Teaching</div>
+                            <div class="chip">Mathematics</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills section">
+                <h2>Skills</h2>
+                <h3>Technical</h3>
+                <div class="row">
+                    <div class="col m6 l4">
+                        <ul>
+                            <li>C#</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                    <div class="col m6 l4">
+                        <ul>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3>Interpersonal</h3>
+                <div class="row">
+                    <div class="col m6 l4">
+                        <ul>
+                            <li>Teaching</li>
+                            <li>Communication</li>
+                        </ul>
+                    </div>
+                    <div class="col m6 l4">
+                        <ul>
+                            <li>Administration</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li class="job">
+                        <div class="job-title">BSc Mathematics with Philosophy</div>
+                        <div id="grade">First Class</div>
+                        <div class="job-place">Royal Holloway, University of London</div>
+                        <div class="job-dates">2013 - 2016</div>
+                        <p class="job-description"></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="show-on-small teal mobile-bar section">
+            <div class="center "><a class="white-text" style="text-decoration: underline; font-size: 1.1em" href="mailto:catherinefoster95@gmail.com">catherinefoster95@gmail.com</a></div>
+            <div class="social center">
+                <a class="pr-1 white-text darken-1" href="https://www.linkedin.com/in/catherine-france-a978aba0/"
+                    target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a class="pr-1 white-text darken-1" href="https://www.facebook.com/catherine.foster.129" target="_blank"><i
+                        class="fab fa-facebook"></i></a>
+                <a class="white-text darken-1" href="https://plus.google.com/u/0/104605965086183356300" target="_blank"><i
+                        class="fab fa-google-plus-square"></i></a>
+            </div>
+        </div>
+
 
     </div>
-
-
     <footer class="page-footer teal">
         <div class="container">
             <div class="row"></div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2018
             </div>
         </div>
     </footer>

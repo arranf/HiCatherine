@@ -1,39 +1,59 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #424242;
+}
+h1,h2,h3 {
+    font-family: 'Gothic A1', sans-serif;
+}
+h2 {
+    font-size: 2em;
+}
+a {
+    color: #009688;
+}
 
-/*HEADER*/
-.header-image img{
-    width:100%;
+/*Helpers*/
+
+.pr-1 {
+    padding-right: 1em;
 }
-.background{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    position: absolute;
-    top: 0;
+.ml-1 {
+    margin-left: 1em;
+}
+.mt-1 {
+    margin-top: 1em;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.separator {
+    font-size: 6px;
+    vertical-align: middle;
+    margin: 0 1em;
+}
+
+/*Components*/
+.hero {
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+}
+.tagline {
+    font-size: 1.4em;
+}
+.profile-img {
     width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 20px;
 }
-.background img{
-    width: 100%;
+.summary {
+    font-size: 1.2em;
 }
-/* CONTENT */
-.hero{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.content{
-    padding-top: 5%;
-}
-.card-content{
-    overflow: auto; /*to make card height of its child divs */
-}
-.card-action i{
-    font-size: 1.5em;
-}
-.card .card-title.large-title{
-    font-size: 32px;
-    margin: 1.1em 0;
-}
-.name-title{
-    font-family: 'Merriweather',sans-serif;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid #dcdcdc;
+.social {
+    font-size: 2em;
 }
 .fact{
     display: block;
@@ -41,34 +61,50 @@
     padding-left: 20px;
     position: relative;
 }
+.summary .fact{
+    padding-left: 40px;
+}
 .fact i {
     position: absolute;
     left: 0;
     top: 3px;
-    color: teal;
 }
-.job{
-    padding: 2em 0;
-}
-.job-title{
+.job-title {
     font-size: 1.3em;
-    margin-bottom: 10px;
-}
-.job-dates{
-    margin-bottom: 1em;
-}
-.job-place i,
-.job-dates i{
-    color: teal;
-    margin-right: 0.8em;
-}
-.job-subtitle{
     font-weight: 500;
 }
-.skill-chips{
-    margin-top: 1em;
+.job-subtitle {
+    font-weight: 500;
 }
-.table-of-contents a:hover,
-.table-of-contents a.active{
-    border-color: teal;
+@media(max-width: 600px){
+    .valign-wrapper {
+        flex-direction: column;
+    }
+    .pinned {
+        position: relative !important;
+    }
+    .row .col.main,
+    .row .col.pushpin {
+        padding: 0 2em;
+    }
+}
+@media(min-width: 601px){
+    .row .col.main {
+        border-left: 0.14em solid #00bfa5; 
+        padding-left: 2em
+    }
+}
+.section {
+    overflow-wrap: break-word;
+}
+.mobile-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: none;
+}
+h3,
+#grade {
+    font-size: 1.2em;
+    color: #009688;
 }
