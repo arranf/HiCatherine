@@ -31,6 +31,9 @@ a {
     vertical-align: middle;
     margin: 0 1em;
 }
+.show-on-small {
+    display: none;
+}
 
 /*Components*/
 .hero {
@@ -96,12 +99,6 @@ a {
 }
 .section {
     overflow-wrap: break-word;
-}
-.mobile-bar {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: none;
 }
 h3,
 #grade {
