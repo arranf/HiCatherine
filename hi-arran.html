@@ -1,249 +1,86 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Hi Arran</title>
+    <title>Catherine France</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="css/materialize.min.css"/>
-    <link rel="stylesheet" href="css/hi-catherine-styles.css" />
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/materialize.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/onepage-scroll.css" />
+    <link rel="stylesheet" href="css/hi-arran-style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">
 </head>
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="15" style="position: relative;">
-    <nav class="my-navbar">
-        <a href="index.html">Home</a>
-        <a href="hi-catherine.html">Hi Catherine</a>
-        <a href="hi-arran.html" class="active">Hi Arran</a>
-        <div class="my-dropdown">
-            <div class="dropbtn">
-                Dropdown
-                <i class="fa fa-caret-down"></i>
-            </div>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-        </div>
-        <a href="javascript:void(0)" class="openbtn" onclick="openNav()">&#9776;</a>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    </nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-2" id="myScrollspy" style="min-width: 150px;">
-                <ul class="nav nav-stacked default" data-spy="affix" data-offset-top="50">
-                    <li><a href="#Navigation-Bar">Navigation Bar</a></li>
-                    <li><a href="#Navigation-Pane">Navigation Pane</a></li>
-                    <li><a href="#Cards">Cards</a></li>
-                    <li><a href="#Forms">Forms</a></li>
-                    <li><a href="#Tabs">Tabs</a></li>
-                    <li><a href="#Blurred-Text">Blurred Text</a></li>
-                    <li><a href="#Scrollspy">Scrollspy</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-8 ">
-                <div class="content">
-                    <h1>Hi Arran!</h1>
-                    <p>
-                        Take a scroll through this page to see some of the things I have learnt to do.
-                        First of all, you can appreciate my nice left and right margin - should look pretty good if you resize the screen too!
-                    </p>
-
-                    <div id="Navigation-Bar">
-                        <h2>Navigation Bar</h2>
-                        <p>
-                            I'm sure you have already seen my nice navigation bar? The dropdown doesn't link to anywhere but I think it looks pretty cool!
-                        </p>
-                        <p>
-                            I want to make it so that it highlights the active page. And also to make it 'sticky' like <a href="https://www.w3schools.com/howto/howto_js_navbar_sticky.asp">here</a>,
-                            which I think would be cool for the homepage where it has a header abover the navbar.
-                        </p>
-                        <p>
-                            <strong>And while we're at it... </strong> did you like my link there? Oh, and my <strong>strong</strong> text? I can also do <em>emphasised</em> text.
-                            I can even use special characters to write out the tags that I used... &lt;strong&gt; and &lt;em&gt;.
-                        </p>
-                        <p class="impressed">
-                            Impressed yet?
-                        </p>
-                    </div>
-                    
-                    <div id="Navigation-Pane">
-                        <h2>Navigation Pane</h2>
-                        <p>
-                            So, I probably wouldn't bother with a navigation pane when I already have a navigation bar, but this is just for demonstration!
-                            To open the navigation pane, click <strong onclick="openNav()">here</strong> (or you can use the icon in the navbar).
-                        </p>
-                        <p>
-                            Do you like how the rest of the page slides over? Notice that if the page is too narrow it will overlay the navbar instead (otherwise you end up with the rest of the page looking very squished).
-                        </p>
-                        <p>
-                            <strong>EDIT:</strong> I have changed it so that the rest of the page doesn't slide over. After changing the structure of the content to support Bootstrap so I could make the <a href="#Scrollspy">Scrollspy</a> I had slightly different margins so it no longer needs the page to slide over.
-                        </p>
-                        <p>
-                            And the way the links in the pane light up when you hover over them?
-                        </p>
-                    </div>
-                    
-                    <div id="mySidenav" class="sidenav">
-                        
-                        <a href="#">Home</a>
-                        <a href="#">Hi Catherine</a>
-                        <a href="#">Hi Arran</a>
-                    </div>
-
-                    <div id="Cards">
-                        <h2>Cards</h2>
-                        <p>You've guessed it, they will order to fit the page dynamically - try resizing the screen!</p>
-                        <div class="card-container">
-                            <div class="card">
-                                <h3>Card 1</h3>
-                                <p>Some text here...</p>
-                                <a class="button" href="" style="width: 100%; margin: 2px;">Maybe even a button</a>
-                            </div>
-                            <div class="card">
-                                <h3>Card 2</h3>
-                            </div>
-                            <div class="card">
-                                <h3>Card 3</h3>
-                            </div>
-                            <div class="card">
-                                <h3>Card 4</h3>
-                            </div>
-                            <div class="card">
-                                <h3>Card 5</h3>
-                            </div>
-                            <div class="card">
-                                <h3>Card 6</h3>
-                            </div>
-                        </div>
-                        <p>
-                            With my css rules this is easily reusable, so you could use it or something similar for your <a href="hi-catherine.html">Hi Catherine</a> page.
-                        </p>
-                    </div>
-                    
-                    <div id="Forms">
-                        <h2>Forms</h2>
-                        <p>Check out this nicely styled form... The text fields go red if you give an invalid input</p>
-                        <form action='' method='get' class='form'>
-                            <div class="form-row">
-                                <label for="full-name">Name</label>
-                                <input id="full-name" name="full-name" type="text" placeholder="Joe Bloggs" />
-                            </div>
-                            <div class="form-row">
-                                <label for="email">Email</label>
-                                <input id="email" name="email" type="email" placeholder="joe@example.com" />
-                            </div>
-                            <fieldset class="legacy-form-row">
-                                <legend>Snack?</legend>
-                                <input id="snack1" name="favourite-snack" type="radio" value="Nuts" checked />
-                                <label for="snack1" class="radio-label">Nuts</label>
-                                <input id="snack2" name="favourite-snack" type="radio" value="Crumpets" />
-                                <label for="snack2" class="radio-label">Crumpets</label>
-                            </fieldset>
-                            <div class='form-row'>
-                                <label for='t-shirt'>Dropdown menu</label>
-                                <select id='t-shirt' name='t-shirt'>
-                                    <option value='xs'>Option 1</option>
-                                    <option value='s'>Option 2</option>
-                                    <option value='m'>Option 3</option>
-                                    <option value='l'>Option 4</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
-                    
-                    <div id="Tabs">
-                        <h2>Tabs</h2>
-                        Try clicking on the tabs to the left to see some info about me (though not yet)! The first tab is open by default.
-                        <div class="tabcontrol">
-                            <nav class="tabs">
-                                <div onclick="openTab(event, 'profile')" class="tablink active">
-                                    <svg id="profile-icon" style="width:24px;height:24px" viewBox="0 0 24 24">
-                                        <path fill="#FFFFFF" d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
-                                    </svg>
-                                </div>
-                                <div onclick="openTab(event, 'history')" class="tablink">
-                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                        <path id="history-icon" fill="#FFFFFF" d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" />
-                                    </svg>
-                                </div>
-                                <div onclick="openTab(event, 'contact')" class="tablink">
-                                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                        <path fill="#FFFFFF" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
-                                    </svg>
-                                </div>
-                            </nav>
-                            <div id="profile" class="tabcontent">
-                                <h2>About Me</h2>
-                                <p>This is some tab content</p>
-                            </div>
-                            <div id="history" class="tabcontent">
-                                <h2>History</h2>
-                                <p>This is some tab content</p>
-                            </div>
-                            <div id="contact" class="tabcontent">
-                                <h2>Contact</h2>
-                                <p>This is some tab content</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div id="Blurred-Text">
-                        <h2>Blurred Text</h2>
-                        <p>
-                            Want to know my secrets? Unblur the text below!
-                        </p>
-                        <div class="button" id="reveal" onclick="reveal()">Reveal</div>
-                        <div class="button hidden" id="hide" onclick="hide()">Hide</div>
-                        <p class="blurry-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper lacus at enim dapibus scelerisque. Suspendisse dictum blandit metus eget cursus. Proin vel ipsum eget mi tempus blandit. Nam enim nulla, scelerisque consequat felis et, cursus volutpat dolor. Donec semper quam ac varius sodales. Nulla id ligula augue. Aliquam tristique odio eget bibendum aliquam. Fusce eget lorem faucibus lectus fringilla vehicula vel ornare nulla.
-                        </p>
-                        <p class="blurry-text">
-                            Integer consectetur semper accumsan. Curabitur eu diam ut velit lacinia interdum. Nulla rhoncus eleifend ex eu tristique. In vel tellus fringilla, feugiat tellus eget, sagittis arcu. Vestibulum sollicitudin eget est sed venenatis. Nulla sed vulputate felis. Aenean nec nisi elit. Quisque consequat lectus lectus, sed suscipit ex semper a. Nullam lectus lorem, mollis at sapien at, pretium lacinia est. Sed vitae nunc tincidunt metus semper viverra. Ut rhoncus nec neque id cursus. Donec mollis mauris at augue ullamcorper congue vel non massa. Suspendisse interdum augue at consequat elementum. Vivamus efficitur est vel diam ullamcorper porttitor. Donec maximus purus urna, vel venenatis metus maximus eu. Quisque at blandit orci.
-                        </p>
-                        <p class="blurry-text">
-                            Shocking, huh?
-                        </p>
-                    </div>
-                    
-                    <div id="Scrollspy">
-                        <h2>Scrollspy</h2>
-                        <p>
-                            I have used Bootstrap to create the scrolling navigation pane on the left. It disappears on small screen sizes, but on larger screens the left and right margins should still look nice.
-                        </p>
-                    </div>
-
-                </div>
-
-                <div style="width:100%;height:100%;position:absolute;vertical-align:middle;text-align:center;">
-                    <button type="button" onclick="buttonPress()" style="margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%">
-                        Click
-                    </button>
-                    <img src="images/profile.png" style="visibility: hidden; position: relative; height: 100px" />
-                </div>
+<body class="white">
+    <div class="stars">
+        <div class="twinkling">
+            <div class="main">
+                <section id="section-one" style="background-image:url(images/hi-arran/rogue-one-min.jpg);">
+                    <span class="message animated fadeInUp border" style="display: block;">Hi Arran</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/minas-tirith-min.jpg)">
+                    <span class="message animated faster">This is just a short message</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/thor-ragnarok-bridge-min.jpg)">
+                    <span class="message animated faster">To tell you how much I love you.</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/whiplash-min.jpg)">
+                    <span class="message animated border">I even filled it with movies you like</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/creed-min.jpg)">
+                    <span class="message animated">and that we have enjoyed watching together</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/wall-e-min.jpg)">
+                    <span class="message animated border">Like WALL-E.</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/monsters-inc-min.jpg)">
+                    <span class="message animated border">Being married to you brings me so much joy</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/civil-war-min.jpg)">
+                    <span class="message animated border">Because you are so loving and noble.</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/pacific-rim-min.jpg)">
+                    <span class="message animated border">I look forward to the rest of our lives together</span>
+                </section>
+                <section style="background-image:url(images/hi-arran/firefly-min.jpg)">
+                    <span class="message animated border">And all the movies we will watch.</span>
+                </section>
+                <section>
+                    <span class="message animated">Love, Catherine</span>
+                    <img src="images/hi-arran/xwing.png" id="xwing">
+                </section>
+                
             </div>
         </div>
-
     </div>
+    <footer class="page-footer teal">
+        <div class="container">
 
+        </div>
+        <div class="footer-copyright">
 
-    <script src="scripts.js"></script>
+        </div>
+    </footer>
 </body>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/jquery.onepage-scroll.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".main").onepage_scroll({
+            sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+            easing: "ease",
+            afterMove: function (index) {
+                var message = $(".active .message");
+                message.show();
+                message.addClass("fadeInUp");
+            }
+        });
+    });
+</script>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
